@@ -1,4 +1,4 @@
-package com.my.control;
+package com.parking.control;
 
 import java.util.List;
 import java.util.Map;
@@ -14,10 +14,10 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.my.dao.ParkingDAOMysql;
-import com.my.validate.Public_parking_RestTemplateServiceImpl;
-import com.my.validate.Public_parking_coordinate_RestTemplateServiceImpl;
-import com.my.vo.Parking;
+import com.parking.dao.ParkingDAOMysql;
+import com.parking.validate.Public_parking_RestTemplateServiceImpl;
+import com.parking.validate.Public_parking_coordinate_RestTemplateServiceImpl;
+import com.parking.vo.Parking;
 
 import ch.qos.logback.classic.Logger;
 import ch.qos.logback.core.Context;

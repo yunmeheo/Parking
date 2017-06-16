@@ -1,4 +1,4 @@
-package com.my.control;
+package com.parking.control;
 
 import javax.servlet.http.HttpSession;
 
@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.my.dao.CustomerDAOMysql;
-import com.my.vo.Customer;
+import com.parking.dao.CustomerDAOMysql;
+import com.parking.vo.Customer;
 
 
 @Controller
