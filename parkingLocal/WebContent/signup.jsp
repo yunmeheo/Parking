@@ -15,6 +15,30 @@
       $parentObj = $("body");
     }
 	  
+    //중복 비밀번호 체크시작
+    var $c_id = $("input[name=c_id]");
+    $("input[name=c_password]").focus(function(){
+    	console.log("비밀번호 확인해줭");
+    	$.ajax({
+    		url : 'checkId.do',
+            method : 'POST',
+            data : {c_id : $c_id.val() },
+            success : function(responseData) {  
+            	
+            	var result = responseData.trim();
+            	if(result=="1") {
+            		console.log("사용가능한 아이디 입니다.");
+            	}else if(result=="-1") {
+            		console.log("존재하는 아이디 입니다.");
+            	}else if(result=="2") {
+            		console.log("아이디를 입력해주세요.");
+            	}
+            	
+            	
+            }
+    	}); return false;
+    });
+    
     $('.signup').find('.btSignup').click(function(){  
    	  var $form = $('form');
       var $data=$form.serialize();
@@ -25,7 +49,7 @@
         data : $data,
         success : function(responseData) {  
         	$parentObj.html(responseData);
-        },
+        }
       }); return false;  // end ajax
    });  // end submit
  }); // end function
