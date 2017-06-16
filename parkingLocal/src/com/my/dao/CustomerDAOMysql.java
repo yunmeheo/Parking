@@ -20,7 +20,6 @@ public class CustomerDAOMysql {
 	}
 	
 	public Customer selectById(String c_id){
-		
 		return session.selectOne("CustomerMapper.selectById",c_id);
 	}
 	

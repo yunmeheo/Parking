@@ -20,15 +20,15 @@
     //아이디 저장 시작
     var itemValue = localStorage.getItem("saveId");
     if(itemValue != null){
-       $("input[name=id]").val(itemValue);
+       $("input[name=c_id]").val(itemValue);
     }
     $subObj.click(function(){
-      var $id = $('input[name=id]').val();
-      var $pwd = $('input[name=pwd]').val();
+      var $id = $('input[name=c_id]').val();
+      var $pwd = $('input[name=c_password]').val();
       console.log($id);
       console.log($pwd);
       if($("input[name=c]").prop("checked") == true){
-        localStorage.setItem("saveId", $("input[name=id]").val()); 
+        localStorage.setItem("saveId", $("input[name=c_id]").val()); 
       }else{
         localStorage.removeItem("saveId");
       }
@@ -46,8 +46,6 @@
                location.href = "<%=contextPath%>";
              }else if( data =="-1"){
                alert("로그인실패");
-             }else{
-               alert(data);
              }
          }
        });return false; 
@@ -62,9 +60,9 @@
 <div class="login" >
   <div class="loginbox">로그인</div>
  <form>  
-   <h5> 아이디:</h5>     <input type ="text" name="id" >
+   <h5> 아이디:</h5>     <input type ="text" name="c_id" >
                          <input type ="checkbox" name="c">id저장<br>
-   <h5> 비밀번호 : </h5> <input type ="password" name="pwd" >
+   <h5> 비밀번호 : </h5> <input type ="password" name="c_password" >
     <input type = "submit" value = "로그인">
  </form>
 </div> 
