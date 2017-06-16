@@ -1,4 +1,4 @@
-package com.my.vo;
+package com.parking.vo;
 
 import java.util.Date;
 

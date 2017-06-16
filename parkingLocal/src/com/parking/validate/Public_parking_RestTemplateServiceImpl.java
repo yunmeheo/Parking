@@ -1,4 +1,4 @@
-package com.my.validate;
+package com.parking.validate;
 
 import java.io.StringReader;
 import java.net.URI;
@@ -21,7 +21,7 @@ import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 import org.xml.sax.InputSource;
 
-import com.my.vo.Parking;
+import com.parking.vo.Parking;
 
 import ch.qos.logback.classic.Logger;
 
