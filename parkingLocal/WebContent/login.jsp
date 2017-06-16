@@ -20,7 +20,7 @@
     //아이디 저장 시작
     var itemValue = localStorage.getItem("saveId");
     if(itemValue != null){
-<<<<<<< HEAD
+
        $("input[name=c_id]").val(itemValue);
     }
     $subObj.click(function(){
