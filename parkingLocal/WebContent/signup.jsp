@@ -50,6 +50,7 @@
     차량번호:       <input type = "text" name ="c_car_number" ><br>
     휴대전화 번호:       <input type = "text" name ="c_phone_number" ><br>
    <input class='btSignup' type='button' value = '가입' >
+<<<<<<< HEAD
 =======
     var $id = $('input[name=id]');
     var $submit =$('input[type=submit]');
@@ -151,6 +152,8 @@
 </div>
 
 <div class="signupcheck" >
+=======
+>>>>>>> alldaygramYM
  
 </div>
 
