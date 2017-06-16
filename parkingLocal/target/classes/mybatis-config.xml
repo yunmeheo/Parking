@@ -4,8 +4,8 @@
   "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
  <typeAliases>
- 	<typeAlias alias="Parking" type="com.my.vo.Parking"/>
- 	<typeAlias alias="Customer" type="com.my.vo.Customer"/>
+ 	<typeAlias alias="Parking" type="com.parking.vo.Parking"/>
+ 	<typeAlias alias="Customer" type="com.parking.vo.Customer"/>
  </typeAliases>
  
   <mappers>

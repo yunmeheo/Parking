@@ -51,6 +51,7 @@ public class CustomerController {
 		Customer c = new Customer(c_id, c_password, c_name, c_phone_number, c_car_number,
 				c_card_number, 'N');
 		if(c!=null) {
+			
 			dao.signup(c);
 			msg = "1";
 		}
