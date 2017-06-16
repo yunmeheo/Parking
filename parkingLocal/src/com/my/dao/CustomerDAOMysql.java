@@ -20,6 +20,10 @@ public class CustomerDAOMysql {
 	}
 	
 	public Customer selectById(String c_id){
+<<<<<<< HEAD
+=======
+		
+>>>>>>> refs/remotes/origin/master
 		return session.selectOne("CustomerMapper.selectById",c_id);
 	}
 	
