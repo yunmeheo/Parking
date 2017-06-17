@@ -55,11 +55,18 @@
  
  
 </script>
+<style>
 
+.login{ width:300px; height:300px; border: 1px solid; border-radius: 50px;border-color:#F2B210;  margin:auto; padding:30px; position:absolute;
+  top:50%;  left:50%;  background:#F2B210;  transform:translate(-50%, -50%)}
+.infobox{margin:auto;}
+.login form{height:100px;margin:auto; }
+
+</style>
 
 <body>
 <div class="login" >
-  <div class="loginbox">로그인</div>
+  <div class="loginbox">login</div>
  <form>  
    <h5> 아이디:</h5>     <input type ="text" name="c_id" >
                          <input type ="checkbox" name="c">id저장<br>
