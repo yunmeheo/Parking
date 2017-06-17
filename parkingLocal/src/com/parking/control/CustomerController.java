@@ -20,19 +20,19 @@ public class CustomerController {
 	//존재하는 이이디인지 체크 - 구현중~!
 	@RequestMapping(value="checkId.do")
 	public String checkId(String c_id, Model model){
+		System.out.println("c_id : "+c_id);
 		String msg = "";
 		Customer c = dao.selectById(c_id);
 		String dbId = null;
-		if(c!=null) {
-			dbId = c.getC_id();
-			if(dbId.equals(c_id)) {
-				msg = "-1";   // 다른아이디 사용해주세요.
-			}else{
-				msg="1";   // 사용가능한 아이디 입니다.
-			}
-		}else {
-			msg="2";   // 아이디를 확인해주세요
+		if("".equals(c_id)) {
+			msg="2";      // 아이디를 확인해주세요
+		}else if(c!=null) {
+			msg = "-1";   // 다른아이디 사용해주세요.
+		}else{
+			msg="1";      // 사용가능한 아이디 입니다.
 		}
+		
+		
 		model.addAttribute("msg", msg);
 		return "/result.jsp";
 	}  // end checkId
